@@ -5,7 +5,9 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
+@PropertySource(value="classpath:person.properties") // 获取属性配置文件
 @Component // 只有spring容器中的类才可以使用容器的属性注入
 @ConfigurationProperties(prefix="person") // 开启springboot的属性注入
 public class Person {
