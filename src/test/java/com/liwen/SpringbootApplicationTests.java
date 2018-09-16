@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ImportResource;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.liwen.yml.Person;
-@ImportResource(locations = {"classpath:beans.xml"}) // 引入配置文件
+//@ImportResource(locations = {"classpath:beans.xml"}) // 引入配置文件，这种方式不推荐使用
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class SpringbootApplicationTests {
