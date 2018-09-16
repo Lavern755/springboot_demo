@@ -1,5 +1,28 @@
 server:
-  port: 8082
+  port: 8081
+spring:
+  profiles:
+    active: dev
+
+---
+server:
+  port: 8083
+spring:
+  profiles: dev
+---
+server:
+  port: 8084
+spring:
+  profiles: prod        
+
+
+
+
+
+
+
+
+
 
 
 #person: 
