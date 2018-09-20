@@ -1,5 +1,6 @@
 package com.liwen.controller;
 
+import java.util.Arrays;
 import java.util.Map;
 
 import org.springframework.stereotype.Controller;
@@ -16,7 +17,8 @@ public class HelloController {
 	
 	@RequestMapping("/success")
 	public String success(Map<String,Object> map) {
-		map.put("hello","Jim");
+		map.put("hello","<h1>Jim</h1>");
+		map.put("users", Arrays.asList("张三","李四","王五"));
 		return "success";
 	}
 }
