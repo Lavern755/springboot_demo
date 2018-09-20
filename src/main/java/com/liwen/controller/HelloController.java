@@ -21,4 +21,13 @@ public class HelloController {
 		map.put("users", Arrays.asList("张三","李四","王五"));
 		return "success";
 	}
+	
+	/**
+	 * 默认使用thymeleaf模板,找到index.html
+	 * @return
+	 */
+	/*@RequestMapping({"/","/index.html"})
+	public String index() {
+		return "index";
+	}*/
 }
